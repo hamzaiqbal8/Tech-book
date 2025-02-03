@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-left-right: 3rem;
+    --font-size-heading: 2.6rem;
+    --font-size-paragraph: 1.12rem;
+    --padding-border: 0.9rem;
+    --border-radius: 0.62rem;
+    --gap: 1.23rem;
+}
+
+body {
+    font-family: "Popins", sans-serif;
+}
+
+.header {
+    background-color: hsl(24, 100%, 97%);
+    padding: var(--padding-left-right);
+
+
+}
+
+.header main {
+    padding: 3rem 0;
+}
+
+header {
+    padding-bottom: var(--padding-left-right);
+}
+
+.tech-book-club-area-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tech-book-content-section-left {
+    flex-basis: 50%;
+}
+
+.tech-book-content-section-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+}
+
+.tech-book-content-section-right {
+    flex-basis: 50%;
+}
+
+  
+
+.tech-book-club-area .tech-book-content-heading {
+    background: linear-gradient(107deg, hsl(22, 99%, 72%) -11.37%, hsl(194, 78%, 11%) 61.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Ensures gradient applies properly */
+}
+.tech-book-content-heading {
+    font-size: var(--font-size-heading);
+    font-weight: bold; 
+}
+
+.tech-book-content-description {
+    font-size: var(--font-size-paragraph);
+    line-height: 1.6;
+}
+
+.tech-book-content-review-section-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tech-book-content-review-section-wrapper {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: var(--padding-border);
+    border-radius: var(--border-radius);
+    font-weight: 550;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tech-book-user-profile-section-wrapper {
+    display: flex;
+    gap: var(--gap);
+}
+
+.tech-book-content-image-section img {
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.user-images {
+    display: flex;
+}
+
+.user-images img {
+    display: block;
+    object-fit: cover;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    margin-left: -5px;
+}
+
+.tech-book-star-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: var(--font-size-paragraph);
+}
+
+.tech-book-main-content-wrapper {
+    padding: var(--padding-left-right);
+    padding: 5rem;
+}
+
+.tech-book-checkbox-wrapper {
+    display: flex;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-book-checkbox-wrapper i {
+    font-size: 1.4rem;
+}
+
+.tech-book-main-checkbox-area-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap);
+    font-size: var(--font-size-paragraph);
+    line-height: 1.3;
+}
+
+.tech-book-main-content-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tech-book-main-content-area-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: var(--gap);
+
+}
+
+.tech-book-main-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.tech-book-club-area-2-left-side-image {
+    width: 100%;
+    height: 100%;
+}
+
+.tech-book-club-area-2-left-side-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+.tech-book-club-area-2-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    padding: var(--padding-left-right);
+    justify-content: space-between;
+}
+
+.tech-book-club-area-2-left-side {
+    display: flex;
+    flex-basis: 99%;
+}
+
+
+.card-3 {
+    background-color: #fff;
+}
+
+.tech-reading-journey,
+.tech-book-membership-options {
+    padding: var(--padding-left-right);
+
+}
+
+.inner-container {
+
+    padding: var(--padding-left-right);
+
+}
+
+.tech-reading-journey-wrapper,
+.tech-book-membership-options-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    justify-content: center;
+    padding: var(--padding-left-right);
+    border-radius: var(--border-radius);
+    background-color: hsl(24, 100%, 97%);
+    ;
+}
+
+.tech-reading-journey-heading,
+.tech-book-membership-options-heading {
+
+    font-size: var(--font-size-heading);
+    text-align: center;
+}
+
+.tech-reading-journey-steps-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech-reading-journey-step-1 {
+    display: flex;
+    flex-basis: 24%;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: 1.3rem;
+}
+
+/* .tech-reading-journey-step-4{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    gap: var(--gap);
+    padding:1.3rem;
+} */
+.step-1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.step-1 p {
+    padding: 0.5rem 0.7rem;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 0.32rem;
+}
+
+.options-memebership {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid black;
+    border-radius: var(--border-radius);
+    padding: var(--padding-border);
+}
+
+.tech-book-membership-for-starter-heading {
+    font-size: 1.47rem;
+
+}
+
+.tech-book-membership-for-starter-prices {
+    display: flex;
+    align-items: center;
+    gap: 0.24rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+}
+
+.tech-book-membership-for-starter-prices h2 {
+    font-size: 1.97rem;
+}
+
+.btn {
+    font-size: var(--font-size-paragraph);
+    background-color: #FDF6ED;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.tech-book-memebership {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    align-items: center;
+}
+
+.tech-book-wrap {
+    padding: 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tech-book-wrap i {
+    font-size: 1.1rem;
+}
+
+.tech-book-membership-options-wrapper {
+    align-items: center;
+    gap: 3rem;
+    background-color: #fff;
+
+}
+
+.tech-book-membership-for-Pro {
+    width: 300px;
+    background: linear-gradient(107deg, #fbf5f3 0%, #E6EBEE 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.tech-book-membership-for-starter-Pro {
+    padding: 3rem 2rem;
+}
+
+.tech-book-final-block-section-wrapper {
+    padding: var(--padding-left-right);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.tech-book-final-block-section-wrapper h2 {
+    font-size: var(--font-size-heading);
+}
+
+.tech-book-final-block-section-wrapper p {
+    font-weight: bold;
+    color: rgb(151, 143, 143);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding-left-right);
+    text-align: center;
+    background-color: #062730;
+    color: white;
+
+}
+
+footer h2 {
+    color: white;
+}
+
+footer .tech-book-content-section-wrapper-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .tech-book-content-review-section-wrapper {
+    border-color: white;
+}
+.tech-book-links{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(75, 73, 73);
+    padding: 13px 0;
+}
+.links-wrapper{
+    display: flex;
+    gap: var(--gap);
+    cursor: pointer;
+}
+.btn{
+    text-align: center;
+}
+
+
+@media screen and (max-width:940px){
+    br {
+        display: none;
+    }
+    .step-1 img{
+        display: none;
+    }
+
+    .tech-book-club-area-wrapper,
+    .tech-book-club-area-2-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .tech-book-content-section-left,
+    .tech-book-club-area-2-left-side-wrapper {
+        width: 100%;
+    }
+
+    .tech-book-content-section-right {
+        width: 100%;
+    }
+
+    .tech-book-content-review-section-wrapper {
+        width: 400px;
+    }
+
+    .tech-reading-journey-steps-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tech-reading-journey-wrapper h2 {
+        text-align: start;
+    }
+
+    .tech-book-membership-options-wrapper h2 {
+        text-align: start;
+    }
+
+    .tech-book-membership-for-Pro,
+    .ech-book-membership-for-Enterprise,
+    .tech-book-membership-for-starter {
+        width: 100%;
+
+    }
+
+    .tech-book-membership-for-starter-Pro {
+        padding: 0;
+    }
+
+    .tech-book-memebership {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-self: flex-start;
+
+
+    }
+
+    .options-memebership {
+        padding: var(--padding-border);
+    }
+    .inner-container{
+        padding: 0;
+    }
+  
+
+}
+
+@media screen and (max-width:650px) {
+    :root {
+        --font-size-heading: 2em;
+        --font-size-paragraph: 1rem;
+        --padding-left-right: 1.5rem
+    }
+
+    .tech-book-content-review-section-wrapper {
+        width: 293px
+    }
+
+    .inner-container {
+        padding: 5px;
+    }
+
+    .tech-book-memebership {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+  
+}
+@media screen and (max-width:430px){
+    .tech-book-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+ 
+}
