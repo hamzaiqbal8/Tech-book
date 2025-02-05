@@ -6,10 +6,11 @@
 
 :root {
     --padding-left-right: 3rem;
-    --font-size-heading: 2.6rem;
+    --padding-top-bottom: 3rem;
+    --font-size-heading: 2.4rem;
     --font-size-paragraph: 1.12rem;
     --padding-border: 0.9rem;
-    --border-radius: 0.62rem;
+    --border-radius: 0.625rem;
     --gap: 1.23rem;
 }
 
@@ -17,13 +18,18 @@ body {
     font-family: "Popins", sans-serif;
 }
 
+
 .header {
     background-color: hsl(24, 100%, 97%);
     padding: var(--padding-left-right);
-
-
 }
 
+.page-width {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: var(--padding-left-right);
+    
+}
 .header main {
     padding: 3rem 0;
 }
@@ -31,7 +37,9 @@ body {
 header {
     padding-bottom: var(--padding-left-right);
 }
-
+.tech-book-background{
+    background-color: hsl(24, 100%, 97%);
+}
 .tech-book-club-area-wrapper {
     width: 100%;
     display: flex;
@@ -159,9 +167,12 @@ header {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+
     gap: var(--gap);
 
+}
+.tech-book-main-content-area-wrapper .tech-book-content-heading{
+    text-align: center;
 }
 
 .tech-book-main-content-wrapper {
@@ -169,6 +180,9 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+}
+.tech-book-club-area-2-left-side-wrapper{
+    width: 100%;
 }
 
 .tech-book-club-area-2-left-side-image {
@@ -187,14 +201,13 @@ header {
 .tech-book-club-area-2-wrapper {
     display: flex;
     width: 100%;
-    gap: 6rem;
-    padding: var(--padding-left-right);
+
     justify-content: space-between;
 }
 
 .tech-book-club-area-2-left-side {
     display: flex;
-    flex-basis: 99%;
+    flex-basis: 100%;
 }
 
 
@@ -208,11 +221,7 @@ header {
 
 }
 
-.inner-container {
 
-    padding: var(--padding-left-right);
-
-}
 
 .tech-reading-journey-wrapper,
 .tech-book-membership-options-wrapper {
@@ -331,13 +340,14 @@ header {
 
 .tech-book-membership-for-Pro {
     width: 300px;
+    border-radius:var(--border-radius);
     background: linear-gradient(107deg, #fbf5f3 0%, #E6EBEE 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
 .tech-book-membership-for-starter-Pro {
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .tech-book-final-block-section-wrapper {
@@ -408,8 +418,11 @@ footer .tech-book-content-review-section-wrapper {
     .tech-book-club-area-wrapper,
     .tech-book-club-area-2-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 1.5rem;
+    }
+    .tech-book-club-area-wrapper{
+        flex-direction: column;
     }
 
     .tech-book-content-section-left,
@@ -440,7 +453,7 @@ footer .tech-book-content-review-section-wrapper {
     }
 
     .tech-book-membership-for-Pro,
-    .ech-book-membership-for-Enterprise,
+    .tech-book-membership-for-Enterprise,
     .tech-book-membership-for-starter {
         width: 100%;
 
@@ -479,14 +492,15 @@ footer .tech-book-content-review-section-wrapper {
         width: 293px
     }
 
-    .inner-container {
-        padding: 5px;
-    }
 
     .tech-book-memebership {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-self: center;
+    }
+    .options-memebership{
+        width: 100% !important;
     }
   
 }
@@ -498,5 +512,6 @@ footer .tech-book-content-review-section-wrapper {
         justify-content: center;
         gap: 1rem;
     }
+
  
 }
